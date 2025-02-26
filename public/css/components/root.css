@@ -1,0 +1,242 @@
+:root
+{
+    /* ==============================================>>> ألوان <<<========================================== */
+    /* -------------------))) COLOR (((------------------- */
+    --color_primary: rgb(255, 35, 35);
+    --color_light: rgb(255, 35, 35);
+    --color_a: #fff;
+    --color_text: #bababa;
+
+
+
+
+
+
+
+
+
+    /* -------------------))) BACKGROUND (((------------------- */
+    --background_body: #000;
+    --background_header: linear-gradient(180deg, #2b2b2b, #000);
+    --background_footer: linear-gradient(180deg, #2b2b2b, #000);
+
+
+
+
+
+
+
+
+
+    /* -------------------))) BORDER (((------------------- */
+    --border_a: 0.1rem solid var(--color_a);
+    --border_primary: 0.1rem solid var(--color_primary);
+    --border_light: 0.1rem solid var(--color_light);
+    --border_text: 0.1rem solid var(--color_text);
+
+
+
+
+
+
+
+
+
+
+    /* -------------------))) BOX_SHADOW (((------------------- */
+    --box_shadow_a: 0rem 0.1rem 0.2rem var(--color_a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ==============================================>>> خطوط <<<========================================== */
+    /* -------------------))) FAMILY (((------------------- */
+    /*
+        Arabic
+    */
+    --zain: "Zain", serif;
+    --noto: "Noto", serif;
+    --Kufi: "Kufi", serif;
+
+
+
+
+
+
+
+
+
+    /* -------------------))) SIZE (((------------------- */
+    
+    --h1_size: 2rem;
+    --h2_size: 1.7rem;
+    --h3_size: 2rem;
+    --h4_size: 1.6rem;
+    --h5_size: 1.3rem;
+    --h6_size: 1.15rem;
+    --p_size: 1.1rem;
+
+
+
+
+
+
+
+
+
+    /* -------------------))) WEIGHT (((------------------- */
+    --h1_weight: 600;
+    --h2_weight: 800;
+    --h3_weight: 800;
+    --h4_weight: 400;
+    --h5_weight: 400;
+    --h6_weight: 400;
+    --p_weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> أساسيات <<<========================================== */
+/* -------------------))) ROOT (((------------------- */
+/* 
+    HTML...
+*/
+*
+{
+    font-family: var(--zain);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------))) ELEMENTS (((------------------- */
+.section_title
+{
+    margin-bottom: 3rem;
+}
+
+
+.button_icon
+{
+    font-size: 2rem;
+
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> تحريك <<<========================================== */
+/* -------------------))) TEXT (((------------------- */
+/* 
+    Water
+*/
+.container_text_water
+{
+    position: relative;
+}
+.text_water
+{
+    font-family: serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    white-space: nowrap;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.text_water:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color_primary);
+}
+.text_water:nth-child(2)
+{
+    color: var(--color_primary);
+    animation: text_water 4s ease-in-out infinite;
+}
+@keyframes text_water
+{
+    0%,100%
+    {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+

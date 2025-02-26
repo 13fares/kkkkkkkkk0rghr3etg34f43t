@@ -1,0 +1,43 @@
+header
+{
+    /* --box_shadow_a: 0rem 0.1rem 0.2rem var(--color_a); */
+    box-shadow: var(--box_shadow_a);
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+
+
+    height: 5rem;
+
+
+
+    .logo
+    {
+        color: var(--color_primary);
+        font-weight: 600;
+
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+section
+{
+    padding: 0;
+    height: calc(50vh - 5rem);
+
+
+    .button_primary
+    {
+        font-weight: 200;
+    }
+}

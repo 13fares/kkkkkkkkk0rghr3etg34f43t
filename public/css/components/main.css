@@ -1,0 +1,407 @@
+:root
+{
+    /* ==============================================>>> مسافات <<<========================================== */
+    /* -------------------))) RADIUS (((------------------- */
+    --radius_4: 0.4rem;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* -------------------))) WIDTH (((------------------- */
+    --width_container: 85%;
+
+
+
+
+
+
+
+
+
+    /* -------------------))) PADDING (((------------------- */
+    --padding_section: 4rem;
+
+    --padding_container: 7.5%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ==============================================>>> مفردات <<<========================================== */
+    /* -------------------))) Z-INDEX (((------------------- */
+    --z_index_before: -1;
+    --z_index_first: 1;
+    --z_index_second: 2;
+    --z_index_header: 3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 768px) {
+        /* ==============================================>>> مسافات <<<========================================== */
+        /* -------------------))) PADDING (((------------------- */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> أساسيات <<<========================================== */
+/* -------------------))) ROOT (((------------------- */
+/* 
+    HTML...
+*/
+html
+{
+    scroll-behavior: smooth;
+}
+
+html, body, .space
+{
+    overflow-x: hidden !important;
+}
+
+#root
+{
+    width: 100%;
+}
+
+*{
+    --webkit-moz-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    --box-sizing: border-box;
+
+    color: var(--color_text);
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    transition: 0.6s;
+}
+
+
+
+/* 
+    BODY...
+*/
+#root, body, header, footer, section, .container, nav,
+.form_container, .form_first, .form_second, form,
+.cards, .card, .backets, .backet, .info, .social, .contact,
+details, summary, a, i, button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header, nav,
+.form_container,
+.cards, .backet,
+a, button
+{
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------))) BODY... (((------------------- */
+body
+{
+    width: 100%;
+    background: var(--background_body);
+}
+header
+{
+    width: 100%;
+    background: var(--background_header);
+}
+footer
+{
+    width: 100%;
+    background: var(--background_footer);
+    padding: 2rem 0;
+}
+section
+{
+    width: 100%;
+    padding: var(--padding_section) 0;
+}
+.container
+{
+    width: var(--width_container);
+    height: 100%;
+    padding: 0 var(--padding_container);
+}
+
+
+
+
+
+
+
+
+
+/* -------------------))) GROUPS (((------------------- */
+/* 
+    Info
+*/
+.info
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* -------------------))) ELEMENTS (((------------------- */
+/* 
+    h, p, a
+*/
+h1
+{
+    font-size: var(--h1_size);
+    font-weight: var(--h1_weight);
+}
+h2
+{
+    font-size: var(--h2_size);
+    font-weight: var(--h2_weight);
+}
+h3
+{
+    font-size: var(--h3_size);
+    font-weight: var(--h3_weight);
+}
+h4
+{
+    font-size: var(--h4_size);
+    font-weight: var(--h4_weight);
+}
+h5
+{
+    font-size: var(--h5_size);
+    font-weight: var(--h5_weight);
+}
+h6
+{
+    font-size: var(--h6_size);
+    font-weight: var(--h6_weight);
+}
+p
+{
+    font-size: var(--p_size);
+    font-weight: var(--p_weight);
+}
+a
+{
+    color: var(--color_a);
+
+    font-size: var(--p_size);
+    font-weight: var(--p_weight);
+
+    cursor: pointer;
+
+
+
+    *
+    {
+        color: var(--color_a);
+    }
+}
+i
+{
+    display: flex !important;
+}
+hr
+{
+    width: 100%;
+}
+
+.section_title
+{
+    color: var(--color_primary);
+
+    text-transform: uppercase;
+}
+
+
+
+/* 
+    Button
+*/
+button, .button
+{
+    border: none;
+    border-radius: var(--radius_4);
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+.button_primary
+{
+    color: var(--color_a);
+    background: transparent;
+    outline: var(--border_a);
+    
+    padding: 0.5rem 1rem;
+}
+.button_secondary
+{
+    color: var(--color_a);
+    background: var(--color_light);
+
+    padding: 0.25rem 0.6rem;
+}
+.button_icon
+{
+    color: var(--color_a);
+    background: var(--color_light);
+    border: var(--border_a);
+    border-radius: 50%;
+
+    cursor: pointer;
+    
+
+
+    i
+    {
+        color: var(--color_a); 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================>>> تغيرات <<<========================================== */
+/* -------------------))) HOVER (((------------------- */
+/*
+    Button
+*/
+.button_primary:hover
+{
+    background: var(--color_light);
+    outline: none;
+}
+.button_secondary:hover
+{
+    color: var(--color_light);
+    background: var(--color_a);
+}
+.button_button:hover
+{
+    color: var(--color_light);
+    background: var(--color_a);
+
+
+    
+    *
+    {
+        color: var(--color_light);
+    }
+}
